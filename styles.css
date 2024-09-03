@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 1em;
+    background-color: #343434;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    display: block;
+    width: 10ch;
+    background-color: #dedede;
+    color: #343434;
+    margin-bottom: 1em;
+    text-align: center;
+    padding: 0.5em 1em;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+.solution-of-the-day {
+    width: 400px;
+    height: 300px;
+}
