@@ -9,24 +9,33 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 a {
     display: block;
-    width: 10ch;
-    background-color: #dedede;
-    color: #343434;
+    width: max-content;
+    color: #dedede;
     margin-bottom: 1em;
     text-align: center;
     padding: 0.5em 1em;
 }
 
-.main-container {
+#main-container {
+    margin: 0 auto;
+    width: 90vw;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 0 2em;
+}
+
+@media (min-width: 450px) {
+    #main-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
-
 .solution-of-the-day {
-    width: 400px;
-    height: 300px;
+    text-align: center;
 }
