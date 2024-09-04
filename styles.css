@@ -29,6 +29,12 @@ a {
     gap: 0 2em;
 }
 
+.placeholder {
+    width: 400px;
+    height: 300px;
+    background: #454545;
+}
+
 @media (min-width: 450px) {
     #main-container {
         grid-template-columns: repeat(3, 1fr);

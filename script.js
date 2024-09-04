@@ -11,8 +11,8 @@ const screenshot = "screenshot.png"
 for (let i=0; i<30; i++) {
     mainContainer.innerHTML += `
         <div class="solution-of-the-day">
-            <img src="screenshot.png" alt="lime green background with the word screenshot in a black Arial font"/>
-            <a href=day${[i]}/index.html>Day ${i + 1}</a>
+            <div class="placeholder"></div>
+            <a href=day${[i]}/index.html>Day ${i+1}</a>
         </div>
     `
 }
