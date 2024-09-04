@@ -54,8 +54,7 @@ a {
 }
 
 .placeholder {
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
     height: 300px;
     background: #343434;
     border-radius: 8px;
