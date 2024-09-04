@@ -1,14 +1,38 @@
 const mainContainer = document.getElementById("main-container")
 const solutionsOfTheDay = document.querySelectorAll(".solution-of-the-day")
 
-for (let i=0; i<30; i++) {
-    mainContainer.innerHTML += `
-        <div class="solution-of-the-day">
-            <div class="placeholder">` + // this '+' will be removed along with extra backticks
-            // <img src=day${[i]}/solution.png alt="" class="solution-img" />
-            // once solution screenshots have been added to each folder, can render on main page
-            `</div>
-            <a href=day${[i]}/index.html>Day ${i+1}</a>
-        </div>
-    `
+for (let i=1; i<=30; i++) {
+
+    const imgPath = `day${[i]}/solution.png`
+    const solutionEl = document.createElement("div")
+    solutionEl.setAttribute("class", "solution-of-the-day")
+    const placeholderEl = document.createElement("div")
+    placeholderEl.setAttribute("class", "placeholder")
+    const anchorEl = document.createElement("a")
+    anchorEl.href = `day${[i]}/index.html`
+    anchorEl.textContent = `Day ${i}`
+    const imageEl = document.createElement("img")
+
+    fetch(imgPath)
+        .then(res => {
+            if (res.ok) {
+                imageEl.setAttribute("class", "solution-img")
+                imageEl.src = imgPath
+            } else {
+                imageEl.src = ""
+            }
+        })
+        .catch(err => {
+            if (err) {
+                console.err(('Error fetching the image:', err))
+                imageEl.src = ""
+            }
+        })
+
+    placeholderEl.appendChild(imageEl)
+    solutionEl.appendChild(placeholderEl)
+    solutionEl.appendChild(anchorEl)
+
+    mainContainer.appendChild(solutionEl)
+
 }
