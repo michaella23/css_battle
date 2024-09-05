@@ -17,3 +17,5 @@ If you would like to share your own solutions on GitHub, feel free to use this t
 4. Currently the anchor tags link to the `index.html` file for each day. When you click on the link, you'll be directed to that page and either see a larger version of your solution or a blank page (if you haven't yet inserted HTML). You can decide what you would like to display here. Perhaps you will have a larger version of your daily solution. You might have a screenshot of your code as well. It is up to you!
 
 5. You may wish to edit this README file to suit your own purposes.
+
+6. Deploy your site, and share with your network! This is a fun way to #BuildInPublic and sharpen your CSS skills!
