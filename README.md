@@ -14,7 +14,7 @@ If you would like to share your own solutions on GitHub, feel free to use this t
 You will be able choose a name for your repo, add a description, and choose to make it public or keep it private.  Once you have navigated to your own repository, you can clone it to your local machine using the terminal or your preferred GUI.
 <img width="972" alt="create new" src="https://github.com/user-attachments/assets/1b0ac8fd-7579-4215-8c03-e35dbbe4e529">
 
-3. The template has 2 directories to start with. The files in the `day1` directory are basically ready to go. You can look at the comments to see where to make a few changes and add your code from CSS Battle. The template is structured to link to an external stylesheet, instead of having all the HTML and CSS in the same file.
+3. The template has 2 directories to start with. The files in the `day1` directory are basically ready to go. You can look at the comments to see where to make a few changes and add your code from CSS Battle. The template is structured to link to an external stylesheet, instead of having all the HTML and CSS in the same file. The files in `day2` have additional comments to help you think about code to add in the following days.
 
 4. When you have completed the daily challenge, take a screenshot of your solution. Drag and drop that file from Finder/File Manager into the corresponding 'day' directory. **Rename it as `solution.png`.** Now your solution will display in the grid on the home page!
 
